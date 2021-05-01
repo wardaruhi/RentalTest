@@ -49,9 +49,6 @@ class rent_edit(unittest.TestCase):
         elem = driver.find_element_by_xpath("/html/body/nav/div/ul/li[1]/h4/a")
         elem.send_keys(Keys.RETURN)
         time.sleep(5)
-        # elem = driver.find_element_by_xpath("/html/body/div/div[2]/div[8]/div/div/a")
-        # elem.send_keys(Keys.RETURN)
-        # time.sleep(1)
         assert "Product edited successfully"
 
         def tearDown(self):

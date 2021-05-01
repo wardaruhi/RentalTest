@@ -39,7 +39,7 @@ class rent_contact(unittest.TestCase):
         elem = driver.find_element_by_xpath("/html/body/div/div[2]/div/form/textarea")
         elem.send_keys(msg)
         time.sleep(1)
-        elem = driver.find_element_by_xpath("/html/body/div/div[2]/div/form/input[4]").click()
+        driver.find_element_by_xpath("/html/body/div/div[2]/div/form/input[4]").click()
         time.sleep(1)
         elem = driver.find_element_by_xpath("/html/body/div/div[2]/div/form/button")
         elem.send_keys(Keys.RETURN)
